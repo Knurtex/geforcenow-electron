@@ -7,6 +7,7 @@ var isFullScreen = false;
 app.commandLine.appendSwitch("enable-features", "VaapiVideoDecoder");
 
 function createWindow() {
+  alert("Hello World");
   const mainWindow = new BrowserWindow({
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
